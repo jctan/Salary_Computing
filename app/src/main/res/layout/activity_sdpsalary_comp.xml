@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SDPSalaryCompActivity">
+
+
+    <TextView
+        android:id="@+id/baseSalaryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Base Salary:"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/baseSalary"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/baseSalary"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:digits="0123456789-"
+        android:enabled="true"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/baseSalaryLabel"
+        app:layout_constraintStart_toStartOf="@+id/baseSalaryLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/currentCityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Current City:"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/baseSalaryLabel"
+        app:layout_constraintTop_toTopOf="@+id/baseSalaryLabel" />
+
+    <Spinner
+        android:id="@+id/currentCity"
+        android:layout_width="360dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/currentCityLabel"
+        app:layout_constraintTop_toBottomOf="@+id/currentCityLabel" />
+
+
+    <TextView
+        android:id="@+id/newCityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="New City:"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/currentCityLabel"
+        app:layout_constraintTop_toBottomOf="@+id/currentCity" />
+
+    <Spinner
+        android:id="@+id/newCity"
+        android:layout_width="360dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".0"
+        app:layout_constraintStart_toStartOf="@+id/newCityLabel"
+        app:layout_constraintTop_toBottomOf="@+id/newCityLabel" />
+
+    <TextView
+        android:id="@+id/targetSalaryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:text="Target Salary:"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newCity" />
+
+    <TextView
+        android:id="@+id/targetSalary"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/targetSalaryLabel" />
+
+
+</android.support.constraint.ConstraintLayout>
